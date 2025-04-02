@@ -744,7 +744,7 @@ div.business {
         }
         dl.text {
           background-color: #fff;
-          box-shadow: 2px 2px 3px #ddd;
+          box-shadow: 2px 1px 15px #0000004D;
           position: relative;
           width: 95%;
           margin: 0 auto;
@@ -1114,8 +1114,8 @@ footer {
 
       .footer__list {
         
-        width: fit-content;
-        margin: 0 auto;
+        // width: fit-content;
+        // margin: 0 auto;
         display: block;
         justify-content: space-between;
         
