@@ -622,6 +622,7 @@ div.business {
         position: absolute;
         bottom: 16px;
         left: 0;
+        left: 8px;
         width: 76px;
         @media (min-width: 768px) {
           width: initial;
@@ -641,7 +642,7 @@ div.business {
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 8px;
         @media (min-width: 768px) {
           gap: 21px;
         }
@@ -672,7 +673,7 @@ div.business {
       img.illust02 {
         position: absolute;
         bottom: 0;
-        right: 0;
+        right: 8px;
         width: 97px;
         @media (min-width: 768px) {
           width: initial;
@@ -720,6 +721,10 @@ div.business {
             @media (min-width: 768px) and (max-width: 991.98px) {
               display: none;
             }
+            @media (min-width: 992px) and (max-width: 1024px) {
+              width: 325px;
+              bottom: 25%;
+            }
           }
         }
       }
@@ -734,7 +739,7 @@ div.business {
           margin-top: 150px;
         }
         @media (min-width: 992px) and (max-width: 1024px) {
-          margin-right: -180px;
+          margin-right: -112px;
           margin-top: 180px;
         }
         dl.text {
@@ -744,13 +749,17 @@ div.business {
           width: 95%;
           margin: 0 auto;
           margin-top: -24px;
-          padding: 24px 16px;
+          padding: 24px 12px;
           @media (min-width: 768px) {
             width: initial;
             min-height: 400px;
             padding: 40px 66px;
           }
-          @media (min-width: 768px) and (max-width: 1024px) {
+          @media (min-width: 768px) and (max-width: 991.98px) {
+            min-height: 300px;
+            padding: 24px 16px;
+          }
+          @media (min-width: 992px) and (max-width: 1024px) {
             min-height: 300px;
             padding: 24px;
           }
@@ -763,7 +772,7 @@ div.business {
               gap: 42px;
             }
             @media (min-width: 768px) and (max-width: 991.98px) {
-              gap: 32px;
+              gap: 24px;
             }
             div.number {
               font-size: 30px;
@@ -777,8 +786,8 @@ div.business {
               justify-content: center;
               align-items: center;
               position: relative;
-              width: 85px;
-              height: 85px;
+              width: 75px;
+              height: 75px;
               border: 3px solid #004EA2;
               background-color: #fff;
               @media (min-width: 768px) {
@@ -788,7 +797,14 @@ div.business {
                 height: 125px;
                 margin-top: -72px;
               }
-              @media (min-width: 768px) and (max-width: 1024px) {
+              @media (min-width: 768px) and (max-width: 991.98px) {
+                font-size: 45px;
+                line-height: 50px;
+                width: 90px;
+                height: 90px;
+                margin-top: -36px;
+              }
+              @media (min-width: 992px) and (max-width: 1024px) {
                 font-size: 45px;
                 line-height: 50px;
                 width: 105px;
@@ -800,10 +816,11 @@ div.business {
                 font-weight: bold;
                 letter-spacing: 1px;
                 line-height: 80px;
-                line-height: 30px;
+                line-height: 25px;
                 color: #262626;
                 @media (min-width: 768px) {
                   font-size: 20px;
+                  line-height: 30px;
                 }
                 @media (min-width: 768px) and (max-width: 1024px) {
                   font-size: 16px;
@@ -816,22 +833,29 @@ div.business {
                 right: 0;
                 width: 0;
                 height: 0;
-                border-left: 12px solid transparent;
-                border-top: 12px solid transparent;
-                border-right: 12px solid #CEE2F8;
-                border-bottom: 12px solid #CEE2F8;
+                border-left: 8px solid transparent;
+                border-top: 8px solid transparent;
+                border-right: 8px solid #CEE2F8;
+                border-bottom: 8px solid #CEE2F8;
+                @media (min-width: 768px) {
+                  border-left: 12px solid transparent;
+                  border-top: 12px solid transparent;
+                  border-right: 12px solid #CEE2F8;
+                  border-bottom: 12px solid #CEE2F8;
+                }
               }
             }
             h3 {
               font-size: 23px;
               font-weight: bold;
               letter-spacing: 5.25px;
-              line-height: 23px;
+              line-height: 25px;
               color: #004EA2;
-              padding: 0 0 8px 0px;
+              flex: 1;
               @media (min-width: 768px) {
                 font-size: 35px;
                 line-height: 22px;
+                padding: 0 0 8px 0px;
               }
               @media (min-width: 768px) and (max-width: 1024px) {
                 font-size: 29px;
@@ -839,16 +863,19 @@ div.business {
               }
             }
             &::after {
-              background-image: url('img/business_dot.webp');
+              background-image: url('../img/business_dot.webp');
               width: 100%;
               height: 2px;
               position: absolute;
               content: '';
-              bottom: -28px;
+              bottom: -20px;
+              @media (min-width: 768px) {
+                bottom: -28px;
+              }
             }
           }
           dd {
-            margin-top: 16px;
+            margin-top: 32px;
             @media (min-width: 768px) {
               margin-top: 48px;
             }
@@ -898,7 +925,7 @@ div.business {
           margin-top: 90px;
         }
         @media (min-width: 768px) and (max-width: 991.98px) {
-          margin-top: 75px;
+          margin-top: 72px;
         }
       }
     }

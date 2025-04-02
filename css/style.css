@@ -599,6 +599,7 @@ div.business section.heading div.block img.illust01 {
   position: absolute;
   bottom: 16px;
   left: 0;
+  left: 8px;
   width: 76px;
 }
 @media (min-width: 768px) {
@@ -624,7 +625,7 @@ div.business section.heading div.block div.title {
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 @media (min-width: 768px) {
   div.business section.heading div.block div.title {
@@ -660,7 +661,7 @@ div.business section.heading div.block div.title h2 {
 div.business section.heading div.block img.illust02 {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 8px;
   width: 97px;
 }
 @media (min-width: 768px) {
@@ -722,6 +723,12 @@ div.business section.data div.item div.image img.sub_img {
     display: none;
   }
 }
+@media (min-width: 992px) and (max-width: 1024px) {
+  div.business section.data div.item div.image img.sub_img {
+    width: 325px;
+    bottom: 25%;
+  }
+}
 @media (min-width: 768px) {
   div.business section.data div.item div.box {
     flex: 1;
@@ -737,7 +744,7 @@ div.business section.data div.item div.image img.sub_img {
 }
 @media (min-width: 992px) and (max-width: 1024px) {
   div.business section.data div.item div.box {
-    margin-right: -180px;
+    margin-right: -112px;
     margin-top: 180px;
   }
 }
@@ -748,7 +755,7 @@ div.business section.data div.item div.box dl.text {
   width: 95%;
   margin: 0 auto;
   margin-top: -24px;
-  padding: 24px 16px;
+  padding: 24px 12px;
 }
 @media (min-width: 768px) {
   div.business section.data div.item div.box dl.text {
@@ -757,7 +764,13 @@ div.business section.data div.item div.box dl.text {
     padding: 40px 66px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
+  div.business section.data div.item div.box dl.text {
+    min-height: 300px;
+    padding: 24px 16px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1024px) {
   div.business section.data div.item div.box dl.text {
     min-height: 300px;
     padding: 24px;
@@ -776,7 +789,7 @@ div.business section.data div.item div.box dl.text dt {
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   div.business section.data div.item div.box dl.text dt {
-    gap: 32px;
+    gap: 24px;
   }
 }
 div.business section.data div.item div.box dl.text dt div.number {
@@ -791,8 +804,8 @@ div.business section.data div.item div.box dl.text dt div.number {
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 85px;
-  height: 85px;
+  width: 75px;
+  height: 75px;
   border: 3px solid #004EA2;
   background-color: #fff;
 }
@@ -805,7 +818,16 @@ div.business section.data div.item div.box dl.text dt div.number {
     margin-top: -72px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
+  div.business section.data div.item div.box dl.text dt div.number {
+    font-size: 45px;
+    line-height: 50px;
+    width: 90px;
+    height: 90px;
+    margin-top: -36px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1024px) {
   div.business section.data div.item div.box dl.text dt div.number {
     font-size: 45px;
     line-height: 50px;
@@ -819,12 +841,13 @@ div.business section.data div.item div.box dl.text dt div.number span.name {
   font-weight: bold;
   letter-spacing: 1px;
   line-height: 80px;
-  line-height: 30px;
+  line-height: 25px;
   color: #262626;
 }
 @media (min-width: 768px) {
   div.business section.data div.item div.box dl.text dt div.number span.name {
     font-size: 20px;
+    line-height: 30px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -839,23 +862,32 @@ div.business section.data div.item div.box dl.text dt div.number::after {
   right: 0;
   width: 0;
   height: 0;
-  border-left: 12px solid transparent;
-  border-top: 12px solid transparent;
-  border-right: 12px solid #CEE2F8;
-  border-bottom: 12px solid #CEE2F8;
+  border-left: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #CEE2F8;
+  border-bottom: 8px solid #CEE2F8;
+}
+@media (min-width: 768px) {
+  div.business section.data div.item div.box dl.text dt div.number::after {
+    border-left: 12px solid transparent;
+    border-top: 12px solid transparent;
+    border-right: 12px solid #CEE2F8;
+    border-bottom: 12px solid #CEE2F8;
+  }
 }
 div.business section.data div.item div.box dl.text dt h3 {
   font-size: 23px;
   font-weight: bold;
   letter-spacing: 5.25px;
-  line-height: 23px;
+  line-height: 25px;
   color: #004EA2;
-  padding: 0 0 8px 0px;
+  flex: 1;
 }
 @media (min-width: 768px) {
   div.business section.data div.item div.box dl.text dt h3 {
     font-size: 35px;
     line-height: 22px;
+    padding: 0 0 8px 0px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -865,15 +897,20 @@ div.business section.data div.item div.box dl.text dt h3 {
   }
 }
 div.business section.data div.item div.box dl.text dt::after {
-  background-image: url("img/business_dot.webp");
+  background-image: url("../img/business_dot.webp");
   width: 100%;
   height: 2px;
   position: absolute;
   content: "";
-  bottom: -28px;
+  bottom: -20px;
+}
+@media (min-width: 768px) {
+  div.business section.data div.item div.box dl.text dt::after {
+    bottom: -28px;
+  }
 }
 div.business section.data div.item div.box dl.text dd {
-  margin-top: 16px;
+  margin-top: 32px;
 }
 @media (min-width: 768px) {
   div.business section.data div.item div.box dl.text dd {
@@ -935,7 +972,7 @@ div.business section.data div.item + .item {
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   div.business section.data div.item + .item {
-    margin-top: 75px;
+    margin-top: 72px;
   }
 }
 @media (min-width: 768px) {
